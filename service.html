@@ -80,72 +80,113 @@
         </div>
     </div>
     <!-- Page Header End -->
-
+    <style>
+  
+   
+  
+        .hover-card {
+          width: 200px;
+          height: 250px;
+          perspective: 1000px;
+        }
+        
+        .hover-card .front,
+        .hover-card .back {
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+          position: absolute;
+          backface-visibility: hidden;
+          transition: transform 0.6s ease-in-out;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          padding: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .hover-card .front {
+          background: url('background.jpg') center/cover no-repeat;
+        
+        }
+        
+        .hover-card .front h3 {
+          margin-top: 10px;
+          font-size: 18px;
+        }
+        
+        .hover-card .back {
+          background-color: #fcbf49;
+          color: #333;
+          transform: rotateY(180deg);
+        }
+        
+        .hover-card .back h3 {
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+        
+        .hover-card .details {
+          margin: 10px 0;
+        }
+        
+        .hover-card .details p {
+          margin: 5px 0;
+        }
+        
+       
+        
+       
+        
+        .hover-card:hover .front {
+          transform: rotateY(180deg);
+        }
+        
+        .hover-card:hover .back {
+          transform: rotateY(360deg);
+        }
+        
+          </style>
 
     <!-- Service Start -->
+     
+    <div class="hover-card ">
+        <div class="front" style="background-image: url(img/service-1.jpg)">
+        </div>
+        <div class="back">
+          <p>End hunger, achieve food security, and promote sustainable agriculture.</p>
+         </div>
+      </div>
+     
+     
     <div class="container-xxl py-5">
         <div class="container">
             <div class="section-title text-center">
                 <h1 class="display-5 mb-5">Our Services</h1>
             </div>
+            
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item">
                         <div class="overflow-hidden">
                             <img class="img-fluid" src="img/service-1.jpg" alt="">
+                            <h1>test</h1>
                         </div>
                         <div class="p-4 text-center border border-5 border-light border-top-0">
-                            <h4 class="mb-3">General Carpentry</h4>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/service-2.jpg" alt="">
-                        </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
-                            <h4 class="mb-3">Furniture Manufacturing</h4>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/Keejob Image.jpg" alt="">
-                        </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
-                            <h4 class="mb-3">Furniture Remodeling.yosr.test</h4>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/service-4.jpg" alt="">
-                        </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
-                            <h4 class="mb-3">Wooden Floor</h4>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
+                
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item">
                         <div class="overflow-hidden">
                             <img class="img-fluid" src="img/service-5.jpg" alt="">
                         </div>
                         <div class="p-4 text-center border border-5 border-light border-top-0">
-                            <h4 class="mb-3">Wooden Furniture</h4>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                            
                         </div>
                     </div>
                 </div>
@@ -155,9 +196,7 @@
                             <img class="img-fluid" src="img/service-6.jpg" alt="">
                         </div>
                         <div class="p-4 text-center border border-5 border-light border-top-0">
-                            <h4 class="mb-3">Custom Work</h4>
-                            <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                            <a class="fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                           
                         </div>
                     </div>
                 </div>
@@ -168,8 +207,8 @@
 
 
     
-
     <!-- Footer Start -->
+  
     <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">

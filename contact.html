@@ -86,6 +86,12 @@
 
 
     <!-- Contact Start -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function onSubmit(token) {
+          document.getElementById("demo-form").submit();
+        }
+      </script>
     <div class="container-fluid bg-light overflow-hidden px-lg-0" style="margin: 6rem 0;">
         <div class="container contact px-lg-0">
             <div class="row g-0 mx-lg-0">
@@ -122,6 +128,10 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
+                                    <button class="g-recaptcha" 
+        data-sitekey="reCAPTCHA_site_key" 
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button>
                                     <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
                                 </div>
                             </div>

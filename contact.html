@@ -30,6 +30,13 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+   <!-- EmailJS -->
+   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+   <script>
+       (function () {
+           emailjs.init("gknukQVN74Bys6weS"); // Replace with your public key
+       })();
+   </script>
 </head>
 
 <body>
@@ -86,12 +93,8 @@
 
 
     <!-- Contact Start -->
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-    <script>
-        function onSubmit(token) {
-          document.getElementById("demo-form").submit();
-        }
-      </script>
+   
+    
     <div class="container-fluid bg-light overflow-hidden px-lg-0" style="margin: 6rem 0;">
         <div class="container contact px-lg-0">
             <div class="row g-0 mx-lg-0">
@@ -101,7 +104,7 @@
                             <h1 class="display-5 mb-4">Contact Us</h1>
                         </div>
                        
-                        <form>
+                        <form id="contact-form">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
@@ -132,6 +135,37 @@
         data-sitekey="6Lfwj7oqAAAAALJYnWhOp7Hdh3DvhvXCodNDYgIJ" 
         data-callback='onSubmit' 
         data-action='submit'>Submit</button>
+        <script>
+            document.getElementById("contact-form").addEventListener("submit", function (e) {
+                e.preventDefault();
+    
+                // const recaptchaResponse = document.querySelector(".g-recaptcha-response").value;
+                // if (!recaptchaResponse) {
+                //     alert("Please complete the reCAPTCHA.");
+                //     return;
+                // }
+    
+                const name = document.getElementById("name").value;
+                const email = document.getElementById("email").value;
+                const subject = document.getElementById("subject").value;
+                const message = document.getElementById("message").value;
+    
+                emailjs.send("service_41tvxik", "template_fxpwu0m", {
+                    name: name,
+                    email: email,
+                    subject: subject,
+                    message: message
+                })
+                    .then(function (response) {
+                        alert("Message sent successfully!");
+                        document.getElementById("contact-form").reset();
+                        grecaptcha.reset(); // Reset reCAPTCHA
+                    }, function (error) {
+                        alert("Failed to send message. Please try again.");
+                        console.error("EmailJS error:", error);
+                    });
+            });
+        </script>
                                     
                                 </div>
                             </div>

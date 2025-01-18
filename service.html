@@ -318,263 +318,424 @@
 
      <br><br><br>
 
-    <!-- Galleries start -->
-    <style>
-        .service-item img {
-            width: 100%;
-            height: 250px; /* Adjust the height as needed */
-            object-fit: cover; /* Ensures the image scales and crops proportionally */
-        }
-    </style>
+    <!-- Add pagination style -->
+<style>
+    .service-item img {
+        width: 100%;
+        height: 250px; /* Adjust the height as needed */
+        object-fit: cover; /* Ensures the image scales and crops proportionally */
+    }
 
-    
-        <div class="section-title text-center">
-                 <h1 class="display-5 mb-5">Our Gallery</h1>
-         </div>
+    .pagination {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+    }
 
-        <br> <br>
-    <div class="container">
-            
-         <div class="row g-4">
+    .pagination li {
+        margin: 0 5px;
+    }
+
+    .pagination a {
+        display: block;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: #007bff;
+        border: 1px solid #007bff;
+        border-radius: 5px;
+    }
+
+    .pagination a.active {
+        background-color: #007bff;
+        color: white;
+    }
+
+    .pagination a:hover {
+        background-color: #0056b3;
+        color: white;
+    }
+</style>
+
+<!-- Gallery Section -->
+<div class="section-title text-center">
+    <h1 class="display-5 mb-5">Our Gallery</h1>
+</div>
+
+<div class="container">
+    <div id="gallery-page-1" class="gallery-page">
+        <div class="row g-4">
+            <!-- Page 1 Images -->
             <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="service-item">
                     <div class="overflow-hidden">
-                        <a href="IMAGE.yosr.modif/Education.1.0.jpg" data-lightbox="portfolio">
-                        <img class="img-fluid" src="IMAGE.yosr.modif/Education.1.0.jpg" alt="">
+                        <a href="IMAGE.yosr.modif/bisiness0.0.jpg" data-lightbox="portfolio">
+                            <img class="img-fluid" src="IMAGE.yosr.modif/bisiness0.0.jpg" alt="">
                         </a>
-                    </div>
-                    <div class="p-4 text-center border border-5 border-light border-top-0">
-                       
                     </div>
                 </div>
             </div>
-            
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="service-item">
                     <div class="overflow-hidden">
                         <a href="IMAGE.yosr.modif/Education.1.1.jpg" data-lightbox="portfolio">
-                        <img class="img-fluid" src="IMAGE.yosr.modif/Education.1.1.jpg" alt="">
+                            <img class="img-fluid" src="IMAGE.yosr.modif/Education.1.1.jpg" alt="">
                         </a>
-                    </div>
-                    <div class="p-4 text-center border border-5 border-light border-top-0">
-                       
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="service-item">
                     <div class="overflow-hidden">
                         <a href="IMAGE.yosr.modif/Education.1.2.jpg" data-lightbox="portfolio">
-                        <img class="img-fluid" src="IMAGE.yosr.modif/Education.1.2.jpg" alt="">
+                            <img class="img-fluid" src="IMAGE.yosr.modif/Education.1.2.jpg" alt="">
                         </a>
-                    </div>
-                    <div class="p-4 text-center border border-5 border-light border-top-0">
-                       
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="service-item">
                     <div class="overflow-hidden">
-                        <a href="IMAGE.yosr.modif/Education.2.0.jpg" data-lightbox="portfolio">
-                            <img class="img-fluid" src="IMAGE.yosr.modif/Education.2.0.jpg" alt="">
+                        <a href="IMAGE.yosr.modif/Exch3.jpg" data-lightbox="portfolio">
+                            <img class="img-fluid" src="IMAGE.yosr.modif/Exch3.jpg" alt="">
                         </a>
-                    </div>
-                    <div class="p-4 text-center border border-5 border-light border-top-0">
-                        
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="service-item">
                     <div class="overflow-hidden">
-                        <a href="IMAGE.yosr.modif/Education.2.1.jpg" data-lightbox="portfolio">
-                            <img class="img-fluid" src="IMAGE.yosr.modif/Education.2.1.jpg" alt="">
+                        <a href="IMAGE.yosr.modif/Exch4.jpg" data-lightbox="portfolio">
+                            <img class="img-fluid" src="IMAGE.yosr.modif/Exch4.jpg" alt="">
                         </a>
-                    </div>
-                    <div class="p-4 text-center border border-5 border-light border-top-0">
-                        
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="service-item">
                     <div class="overflow-hidden">
-                        <a href="IMAGE.yosr.modif/Education.2.2.jpg" data-lightbox="portfolio">
-                            <img class="img-fluid" src="IMAGE.yosr.modif/Education.2.2.jpg" alt="">
+                        <a href="IMAGE.yosr.modif/Exch2.jpg" data-lightbox="portfolio">
+                            <img class="img-fluid" src="IMAGE.yosr.modif/Exch2.jpg" alt="">
                         </a>
-                    </div>
-                    <div class="p-4 text-center border border-5 border-light border-top-0">
-                        
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="service-item">
-                    <div class="overflow-hidden">
-                        <a href="IMAGE.yosr.modif/Education.3.0.jpg" data-lightbox="portfolio">
-                            <img class="img-fluid" src="IMAGE.yosr.modif/Education.3.0.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="p-4 text-center border border-5 border-light border-top-0">
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="service-item">
-                    <div class="overflow-hidden">
-                        <a href="IMAGE.yosr.modif/Education.3.1.jpg" data-lightbox="portfolio">
-                            <img class="img-fluid" src="IMAGE.yosr.modif/Education.3.1.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="p-4 text-center border border-5 border-light border-top-0">
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="service-item">
-                    <div class="overflow-hidden">
-                        <a href="IMAGE.yosr.modif/Education.3.2.jpg" data-lightbox="portfolio">
-                            <img class="img-fluid" src="IMAGE.yosr.modif/Education.3.2.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="p-4 text-center border border-5 border-light border-top-0">
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="service-item">
                     <div class="overflow-hidden">
                         <a href="IMAGE.yosr.modif/Agriculture1.1.jpg" data-lightbox="portfolio">
                             <img class="img-fluid" src="IMAGE.yosr.modif/Agriculture1.1.jpg" alt="">
                         </a>
                     </div>
-                    <div class="p-4 text-center border border-5 border-light border-top-0">
-                        
-                    </div>
                 </div>
             </div>
-
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="service-item">
                     <div class="overflow-hidden">
                         <a href="IMAGE.yosr.modif/Agriculture1.2.jpg" data-lightbox="portfolio">
                             <img class="img-fluid" src="IMAGE.yosr.modif/Agriculture1.2.jpg" alt="">
                         </a>
                     </div>
-                    <div class="p-4 text-center border border-5 border-light border-top-0">
-                        
-                    </div>
                 </div>
             </div>
-
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="service-item">
                     <div class="overflow-hidden">
                         <a href="IMAGE.yosr.modif/Agriculture1.3.jpg" data-lightbox="portfolio">
                             <img class="img-fluid" src="IMAGE.yosr.modif/Agriculture1.3.jpg" alt="">
                         </a>
                     </div>
-                    <div class="p-4 text-center border border-5 border-light border-top-0">
-                        
-                    </div>
                 </div>
             </div>
-
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="service-item">
-                    <div class="overflow-hidden">
-                        <a href="IMAGE.yosr.modif/Agriculture2.1.jpg" data-lightbox="portfolio">
-                            <img class="img-fluid" src="IMAGE.yosr.modif/Agriculture2.1.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="p-4 text-center border border-5 border-light border-top-0">
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="service-item">
-                    <div class="overflow-hidden">
-                        <a href="IMAGE.yosr.modif/Agriculture2.2.jpg" data-lightbox="portfolio">
-                            <img class="img-fluid" src="IMAGE.yosr.modif/Agriculture2.2.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="p-4 text-center border border-5 border-light border-top-0">
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="service-item">
-                    <div class="overflow-hidden">
-                        <a href="IMAGE.yosr.modif/Agriculture2.3.jpg" data-lightbox="portfolio">
-                            <img class="img-fluid" src="IMAGE.yosr.modif/Agriculture2.3.jpg" style="object-position: 5px 25%;" alt="">
-                        </a>
-                    </div>
-                    <div class="p-4 text-center border border-5 border-light border-top-0">
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="service-item">
-                    <div class="overflow-hidden">
-                        <a href="IMAGE.yosr.modif/Agriculture3.1.jpg" data-lightbox="portfolio">
-                            <img class="img-fluid" src="IMAGE.yosr.modif/Agriculture3.1.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="p-4 text-center border border-5 border-light border-top-0">
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="service-item">
-                    <div class="overflow-hidden">
-                        <a href="IMAGE.yosr.modif/Agriculture3.2.jpg" data-lightbox="portfolio">
-                            <img class="img-fluid" src="IMAGE.yosr.modif/Agriculture3.2.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="p-4 text-center border border-5 border-light border-top-0">
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="service-item">
-                    <div class="overflow-hidden">
-                        <a href="IMAGE.yosr.modif/Agriculture3.3.jpg" data-lightbox="portfolio">
-                            <img class="img-fluid" src="IMAGE.yosr.modif/Agriculture3.3.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="p-4 text-center border border-5 border-light border-top-0">
-                        
-                    </div>
-                </div>
-            </div>
-
-            
-        </div>
+            <!-- Add other images for page 1 here -->
         </div>
     </div>
-    <!-- Galleries End -->
+
+    <div id="gallery-page-2" class="gallery-page" style="display: none;">
+        <div class="row g-4">
+            <!-- Page 2 Images -->
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="overflow-hidden">
+                        <a href="IMAGE.yosr.modif/discover0.1.jpg" data-lightbox="portfolio">
+                            <img class="img-fluid" src="IMAGE.yosr.modif/discover0.1.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="overflow-hidden">
+                        <a href="IMAGE.yosr.modif/discover0.2.jpg" data-lightbox="portfolio">
+                            <img class="img-fluid" src="IMAGE.yosr.modif/discover0.2.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="overflow-hidden">
+                        <a href="IMAGE.yosr.modif/discover0.3.jpg" data-lightbox="portfolio">
+                            <img class="img-fluid" src="IMAGE.yosr.modif/discover0.3.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="overflow-hidden">
+                        <a href="IMAGE.yosr.modif/discover0.4.jpg" data-lightbox="portfolio">
+                            <img class="img-fluid" src="IMAGE.yosr.modif/discover0.4.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="overflow-hidden">
+                        <a href="IMAGE.yosr.modif/discover0.5.jpg" data-lightbox="portfolio">
+                            <img class="img-fluid" src="IMAGE.yosr.modif/discover0.5.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="overflow-hidden">
+                        <a href="IMAGE.yosr.modif/discover0.6.jpg" data-lightbox="portfolio">
+                            <img class="img-fluid" src="IMAGE.yosr.modif/discover0.6.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="overflow-hidden">
+                        <a href="IMAGE.yosr.modif/discover0.7.jpg" data-lightbox="portfolio">
+                            <img class="img-fluid" src="IMAGE.yosr.modif/discover0.7.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="overflow-hidden">
+                        <a href="IMAGE.yosr.modif/discover1.1.jpg" data-lightbox="portfolio">
+                            <img class="img-fluid" src="IMAGE.yosr.modif/discover1.1.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="overflow-hidden">
+                        <a href="IMAGE.yosr.modif/discover1.2.jpg" data-lightbox="portfolio">
+                            <img class="img-fluid" src="IMAGE.yosr.modif/discover1.2.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add other images for page 2 here -->
+        </div>
+    </div>
+
+    <div id="gallery-page-3" class="gallery-page" style="display: none;">
+        <div class="row g-4">
+            <!-- Page 3 Images -->
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="overflow-hidden">
+                        <a href="IMAGE.yosr.modif/bisiness0.3.jpg" data-lightbox="portfolio">
+                            <img class="img-fluid" src="IMAGE.yosr.modif/bisiness0.3.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="overflow-hidden">
+                        <a href="IMAGE.yosr.modif/bisiness0.4.jpg" data-lightbox="portfolio">
+                            <img class="img-fluid" src="IMAGE.yosr.modif/bisiness0.4.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="overflow-hidden">
+                        <a href="IMAGE.yosr.modif/bisiness0.5.jpg" data-lightbox="portfolio">
+                            <img class="img-fluid" src="IMAGE.yosr.modif/bisiness0.5.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="overflow-hidden">
+                        <a href="IMAGE.yosr.modif/bisiness0.6.jpg" data-lightbox="portfolio">
+                            <img class="img-fluid" src="IMAGE.yosr.modif/bisiness0.6.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="overflow-hidden">
+                        <a href="IMAGE.yosr.modif/bisiness0.1.jpg" data-lightbox="portfolio">
+                            <img class="img-fluid" src="IMAGE.yosr.modif/bisiness0.1.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="overflow-hidden">
+                        <a href="IMAGE.yosr.modif/Education.2.0.jpg" data-lightbox="portfolio">
+                            <img class="img-fluid" src="IMAGE.yosr.modif/Education.2.0.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="overflow-hidden">
+                        <a href="IMAGE.yosr.modif/Education.2.1.jpg" data-lightbox="portfolio">
+                            <img class="img-fluid" src="IMAGE.yosr.modif/Education.2.1.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="overflow-hidden">
+                        <a href="IMAGE.yosr.modif/Education.2.2.jpg" data-lightbox="portfolio">
+                            <img class="img-fluid" src="IMAGE.yosr.modif/Education.2.2.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="overflow-hidden">
+                        <a href="IMAGE.yosr.modif/bisiness0.2.jpg" data-lightbox="portfolio">
+                            <img class="img-fluid" src="IMAGE.yosr.modif/bisiness0.2.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add other images for page 3 here -->
+        </div>
+    </div>
+
+    <div id="gallery-page-4" class="gallery-page" style="display: none;">
+        <div class="row g-4">
+            <!-- Page 4 Images -->
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="overflow-hidden">
+                        <a href="IMAGE.yosr.modif/Education.4.3.jpg" data-lightbox="portfolio">
+                            <img class="img-fluid" src="IMAGE.yosr.modif/Education.4.3.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="overflow-hidden">
+                        <a href="IMAGE.yosr.modif/Education.3.0.jpg" data-lightbox="portfolio">
+                            <img class="img-fluid" src="IMAGE.yosr.modif/Education.3.0.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="overflow-hidden">
+                        <a href="IMAGE.yosr.modif/Education.4.5.jpg" data-lightbox="portfolio">
+                            <img class="img-fluid" src="IMAGE.yosr.modif/Education.4.5.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="overflow-hidden">
+                        <a href="IMAGE.yosr.modif/Education.3.1.jpg" data-lightbox="portfolio">
+                            <img class="img-fluid" src="IMAGE.yosr.modif/Education.3.1.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="overflow-hidden">
+                        <a href="IMAGE.yosr.modif/Education.4.7.jpg" data-lightbox="portfolio">
+                            <img class="img-fluid" src="IMAGE.yosr.modif/Education.4.7.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="overflow-hidden">
+                        <a href="IMAGE.yosr.modif/Adult Yoga.jpg" data-lightbox="portfolio">
+                            <img class="img-fluid" src="IMAGE.yosr.modif/Adult Yoga.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="overflow-hidden">
+                        <a href="IMAGE.yosr.modif/Education.3.2.jpg" data-lightbox="portfolio">
+                            <img class="img-fluid" src="IMAGE.yosr.modif/Education.3.2.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Add other images for page 4 here -->
+        </div>
+    </div>
+
+    <!-- Pagination -->
+    <ul class="pagination">
+        <li><a href="#" class="active" onclick="showPage(1, event)">1</a></li>
+        <li><a href="#" onclick="showPage(2, event)">2</a></li>
+        <li><a href="#" onclick="showPage(3, event)">3</a></li>
+        <li><a href="#" onclick="showPage(4, event)">4</a></li>
+
+        <!-- Add more pages as needed -->
+    </ul>
+</div>
+
+<!-- Add JavaScript -->
+<script>
+    function showPage(pageNumber, event) {
+        // Prevent the default behavior of the link (refreshing the page)
+        event.preventDefault();
+
+        // Save the current scroll position
+        const currentScrollPos = window.scrollY;
+
+        // Hide all gallery pages
+        const pages = document.querySelectorAll('.gallery-page');
+        pages.forEach(page => page.style.display = 'none');
+
+        // Show the selected page
+        document.getElementById(`gallery-page-${pageNumber}`).style.display = 'block';
+
+        // Update active pagination link
+        const paginationLinks = document.querySelectorAll('.pagination a');
+        paginationLinks.forEach(link => link.classList.remove('active'));
+        paginationLinks[pageNumber - 1].classList.add('active');
+
+        // Restore the scroll position
+        window.scrollTo(0, currentScrollPos);
+    }
+</script>
+
 
 
     

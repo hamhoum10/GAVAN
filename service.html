@@ -93,20 +93,21 @@
         
         .hover-card .front,
         .hover-card .back {
-          width: 100%;
-          height: 100%;
-          border-radius: 10px;
-          position: absolute;
-          backface-visibility: hidden;
-          transition: transform 0.6s ease-in-out;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-          padding: 10px;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+    align-items: flex-start; /* Align content to the left */
+    text-align: left; /* Align text to the left */
+    padding: 20px; /* Add some padding for spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
         
         .hover-card .front {
           background: url('background.jpg') center/cover no-repeat;
@@ -165,9 +166,19 @@
                     <div class="front" style="background-image: url(IMAGE.yosr.modif/Education.1.0.jpg)">
                     </div>
                     <div class="back">
-                        <p class="text-primary fw-medium mb-2">Education</p>
-                      <p>The goal was to promote physical fitness, discipline, and self-confidence. Through engaging training sessions, we encouraged participants to embrace the values of respect, perseverance, and teamwork.</p>
-                    </div>
+                        
+                            <li><strong>Service:</strong> Education</li>
+                            <li><strong>Concept:</strong> Promoting empowerment through physical fitness and discipline.</li>
+                            <li><strong>Description:</strong>
+                                <ul>
+                                    <li>Fostered physical fitness, discipline, and self-confidence.</li>
+                                    <li>Organized engaging training sessions focused on personal growth.</li>
+                                    <li>Encouraged participants to embrace values such as respect, perseverance, and teamwork.</li>
+                                    <li>Empowered individuals to overcome challenges and build a strong foundation for success.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>   
                   </div>
                 </div>
                 
@@ -176,8 +187,18 @@
                     <div class="front" style="background-image: url(IMAGE.yosr.modif/Education.3.1.jpg)">
                     </div>
                     <div class="back">
-                        <p class="text-primary fw-medium mb-2">Education</p>
-                      <p>This project encouraged individuals of all ages to embrace the practice of yoga as a tool for enhancing both their body and mind. Through accessible and inclusive yoga sessions, we helped participants develop mindfulness, improve flexibility, and reduce stress. </p>
+                    
+                        <li><strong>Service:</strong> Education</li>
+                            <li><strong>Concept:</strong> Introducing yoga to children as a fun and engaging tool.</li>
+                            <li><strong>Description:</strong>
+                                <ul>
+                                    <li>Providing age-appropriate yoga sessions designed to improve flexibility, strength, and coordination.</li>
+                                    <li>Encouraging children to develop self-awareness and emotional resilience through breathing exercises and mindfulness techniques.</li>
+                                    <li>Creating a playful and supportive environment where children can learn the values of focus, patience, and relaxation.</li>
+                                    
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                   </div>
                 </div>
@@ -187,9 +208,18 @@
                     <div class="front" style="background-image: url(IMAGE.yosr.modif/Education.2.0.jpg)">
                     </div>
                     <div class="back">
-                        <p class="text-primary fw-medium mb-2">Education</p>
-                      <p>This project not only provided valuable skills for personal and professional growth but also encouraged creativity and self-reliance, helping individuals connect with their craftsmanship and their communities. Through hands-on workshops, participants learned the basics of carpentry, from using tools safely to crafting simple projects.</p>
-                    </div>
+                        <li><strong>Service:</strong> Business</li>
+                            <li><strong>Concept:</strong> Empowering individuals to develop practical carpentry skills.</li>
+                            <li><strong>Description:</strong>
+                                <ul>
+                                    <li>Offering hands-on workshops that teach the basics of carpentry, including safe tool usage and simple project crafting.</li>
+                                    <li>Encouraging participants to explore their creativity and craftsmanship through guided activities.</li>
+                                    <li>Promoting a sense of accomplishment and connection with the community by working on meaningful projects together.</li>
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>   
                   </div>
                 </div>
               </div>
@@ -203,9 +233,18 @@
                     <div class="front" style="background-image: url(IMAGE.yosr.modif/Agriculture0.1.jpg)">
                     </div>
                     <div class="back">
-                        <p class="text-primary fw-medium mb-2">Agriculture</p>
-                      <p>Our Traditional Agriculture initiative aimed to preserve and promote sustainable farming practices passed down through generations. By teaching participants about organic farming, we encouraged a deeper connection with the land and respect for the environment. This project not only helped enhance food security but also supported biodiversity and sustainable livelihoods, fostering a more resilient and self-sufficient agricultural community.</p>
-                    </div>
+                        <li><strong>Service:</strong> Agriculture</li>
+                            <li><strong>Concept:</strong> Preserving sustainable farming practices.</li>
+                            <li><strong>Description:</strong>
+                                <ul>
+                                    <li>Teaching organic farming techniques passed down through generations.</li>
+                                    <li>Encouraging a deeper connection with the land and respect for nature.</li>
+                                    <li>Enhancing food security, supporting biodiversity, and promoting sustainable livelihoods.</li>
+                                    <li>Fostering a resilient and self-sufficient agricultural community.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>  
                   </div>
                 </div>
               
@@ -214,13 +253,65 @@
                     <div class="front" style="background-image: url(IMAGE.yosr.modif/Agriculture0.2.jpg)">
                     </div>
                     <div class="back">
-                        <p class="text-primary fw-medium mb-2">Agriculture</p>
-                      <p>Our Smart Agriculture initiative focused on integrating modern technology with traditional farming practices to enhance productivity and sustainability. By introducing participants to innovative tools and systems, we aimed to improve crop management, optimize resources, and reduce environmental impact. This project empowered farmers to make data-driven decisions, contributing to more efficient and sustainable agricultural practices for the future.
-                      </p>
+                        <li><strong>Service:</strong> Agriculture</li>
+                            <li><strong>Concept:</strong> Integrating technology with traditional farming to enhance productivity.</li>
+                            <li><strong>Description:</strong>
+                                <ul>
+                                    <li>Introducing innovative tools and systems for improved crop management.</li>
+                                    <li>Optimizing resource use and reducing environmental impact.</li>
+                                    <li>Empowering farmers with data-driven decision-making for more efficient practices.</li>
+                                    <li>Contributing to sustainable and future-oriented agricultural methods.</li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                   </div>
                 </div>
               
+                <div class="col-md-4">
+                    <div class="hover-card">
+                      <div class="front" style="background-image: url(IMAGE.yosr.modif/Project.business.jpg)">
+                      </div>
+                      <div class="back">
+                          <li><strong>Service:</strong> Business</li>
+                              <li><strong>Concept:</strong> Creating a dynamic space for community engagement.</li>
+                              <li><strong>Description:</strong>
+                                  <ul>
+                                      <li>Building a multi-functional space designed to host various activities, from fitness classes to workshops and community events.</li>
+                                      <li>Providing state-of-the-art facilities for both physical and creative pursuits.</li>
+                                      <li>Offering a welcoming environment where people can connect, learn, and grow together.</li>
+                                      
+                                  </ul>
+                              </li>
+                          </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            <br><br>
+              
+              <div class="row">
+                <!-- Second Row: 3 Cards -->
+                <div class="col-md-4">
+                  <div class="hover-card">
+                    <div class="front" style="background-image: url(IMAGE.yosr.modif/Adult\ Yoga.jpg)">
+                    </div>
+                    <div class="back">
+                        <li><strong>Service:</strong> Education</li>
+                            <li><strong>Concept:</strong> Promoting physical well-being and mental clarity.</li>
+                            <li><strong>Description:</strong>
+                                <ul>
+                                    <li>Offering tailored yoga sessions that cater to adults of all skill levels.</li>
+                                    <li>Focusing on physical strength, flexibility, balance, and mental relaxation.</li>
+                                    <li>Creating a peaceful and supportive environment to relieve stress, improve posture, and increase mindfulness.</li>
+                                    <li>Encouraging holistic wellness through mindful breathing, meditation, and restorative poses for both body and mind.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>  
+                  </div>
+                </div>
+
                 
             </div>
     <!-- Projects End -->       

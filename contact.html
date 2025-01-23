@@ -132,10 +132,10 @@
                                 </div>
                                 <div class="col-12">
                                     <button class="g-recaptcha btn btn-primary w-100 py-3" data-sitekey="6Lfwj7oqAAAAALJYnWhOp7Hdh3DvhvXCodNDYgIJ" 
-                                    data-callback='onSubmit' 
-                                    data-action='submit'>Submit</button>
-                                </div>
-                            </div>
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button>
+    </div>
+</div>
         
         <script>
             document.getElementById("contact-form").addEventListener("submit", function (e) {
@@ -152,7 +152,7 @@
                 const subject = document.getElementById("subject").value;
                 const message = document.getElementById("message").value;
 
-                if (!name || !email || !message) {
+                if (!name || !email || !message || !subject) {
         alert("Please fill out all fields ");
         return;
     }
@@ -216,7 +216,7 @@
                     <a class="btn btn-link" href="service.html">Our Projects</a>
                     <a class="btn btn-link" href="contact.html">Contact Us</a>
                     <a class="btn btn-link" href="contact_member.html">Volunteer</a>
-                    <a class="btn btn-link" href="contact_company.html">Donate</a>
+                    <a class="btn btn-link" href="contact_company.html">Collaborate</a>
                 </div>
                 
             </div>
